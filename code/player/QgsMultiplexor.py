@@ -295,7 +295,7 @@ class Multiplexor(QDialog, Ui_VideoMultiplexer):
                         
                         # Platform Pitch Angle
                         if k == "OSD.pitch":
-                            OSD_pitch = float(v)
+                            OSD_pitch = 0.0
                             _bytes = float_to_bytes(round(OSD_pitch, 4), _domain6, _range6)
                             _len = int_to_bytes(len(_bytes))
                             _bytes = _key6 + _len + _bytes
@@ -304,7 +304,7 @@ class Multiplexor(QDialog, Ui_VideoMultiplexer):
                         
                         # Platform Roll Angle
                         if k == "OSD.roll":
-                            OSD_roll = float(v)
+                            OSD_roll = 0.0
                             _bytes = float_to_bytes(round(OSD_roll, 4), _domain7, _range7)
                             _len = int_to_bytes(len(_bytes))
                             _bytes = _key7 + _len + _bytes
