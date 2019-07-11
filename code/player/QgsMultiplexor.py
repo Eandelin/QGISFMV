@@ -368,7 +368,7 @@ class Multiplexor(QDialog, Ui_VideoMultiplexer):
                         
                         # Sensor Relative Roll Angle
                         if k == "GIMBAL.roll":
-                            GIMBAL_roll = float(v)
+                            GIMBAL_roll = 0.0
                             _bytes = float_to_bytes(round(GIMBAL_roll, 4), _domain20, _range20)
                             _len = int_to_bytes(len(_bytes))
                             _bytes = _key20 + _len + _bytes
